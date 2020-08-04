@@ -1,0 +1,36 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "Som3S3crEtP@$$w0rd",
+    "database": "db",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "define": {
+      "timestamps": false
+    },
+    "use_env_variable": false
+  },
+  "test": {
+   "username": "postgres",
+    "password": "Som3S3crEtP@$$w0rd",
+    "database": "db",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "define": {
+      "timestamps": false
+    }
+  },
+  "production": {
+    "username": "postgres",
+    "password": "Som3S3crEtP@$$w0rd",
+    "database": "db",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "define": {
+      "timestamps": false
+    }
+  }
+}

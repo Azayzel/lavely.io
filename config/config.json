@@ -1,0 +1,36 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "@@BBrutu$$1987",
+    "database": "lavely-io",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "define": {
+      "timestamps": false
+    },
+    "use_env_variable": false
+  },
+  "test": {
+   "username": "postgres",
+    "password": "@@BBrutu$$1987",
+    "database": "lavely-io",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "define": {
+      "timestamps": false
+    }
+  },
+  "production": {
+    "username": "postgres",
+    "password": "@@BBrutu$$1987",
+    "database": "lavely-io",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "define": {
+      "timestamps": false
+    }
+  }
+}
