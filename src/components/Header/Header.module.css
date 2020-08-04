@@ -7,12 +7,19 @@
 .root {
   background: #373277;
   color: #fff;
+  position: static;
 }
 
 .container {
   margin: 0 auto;
   padding: 20px 0;
   max-width: var(--max-content-width);
+}
+
+.headerGrid {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
 
 .brand {
@@ -42,4 +49,27 @@
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.25em;
   margin: 0;
+}
+
+.input {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 10px 0 0;
+  padding: 10px 16px;
+  width: 30%;
+  height: 35px;
+  outline: 0;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  color: #616161;
+  font-size: 18px;
+  line-height: 1.3333333;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.input:focus {
+  border-color: #8dcefa;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 116, 194, 0.6);
 }

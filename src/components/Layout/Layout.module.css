@@ -178,8 +178,13 @@ textarea {
   }
 }
 
+.childContainer {
+  position: relative;
+  overflow-y: auto;
+}
+
 .footerBottom {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }

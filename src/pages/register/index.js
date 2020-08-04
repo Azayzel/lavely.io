@@ -7,7 +7,7 @@ const Register = () => {
   return (
     <div className={s.root}>
       <div className={s.container}>
-        <h1>Sign Up For Updates</h1>
+        <h1 className={s.lead}>Sign Up For Updates</h1>
         <form method="post">
           <div className={s.formGroup}>
             <label className={s.label} htmlFor="usernameOrEmail">
@@ -34,7 +34,7 @@ const Register = () => {
           </div>
           <div className={s.formGroup}>
             <button className={s.button} type="submit">
-              Log in
+              Sign Up
             </button>
           </div>
         </form>

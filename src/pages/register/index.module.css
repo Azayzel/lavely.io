@@ -8,12 +8,13 @@
 .container {
   margin: 0 auto;
   padding: 0 0 40px;
-  max-width: var(--max-content-width);
+  width: 350px;
 }
 
 
 .lead {
-  font-size: 1.25em;
+  font-size: 1.65em;
+  font-weight: 400;
 }
 
 .formGroup {
@@ -22,7 +23,7 @@
 
 .label {
   display: block;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .input {

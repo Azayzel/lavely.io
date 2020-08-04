@@ -13,8 +13,9 @@ const Header = () => {
         <Link className={s.brand} to="/">
           <img src={logoUrl} alt="Lavely.io Logo" style={{width: '20%'}} />
         </Link>
-        <span>
+        <span className={s.headerGrid}>
           <p className={s.bannerDesc}>Modern Software Development Made Easy</p>
+          <input type="text" placeholder="Search..." className={s.input}/>
         </span>
       </div>
     </div>

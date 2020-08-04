@@ -1,44 +1,93 @@
+Josh Lavely
+============
 
-# About Me
+-------------------     ----------------------------
+11303 Springfield Dr.                 josh@lavely.io
+Fredericksburg, Va                       @joshlavely
+USA                                     703-862-7672
+-------------------     ----------------------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat tortor
-fermentum mi fermentum dignissim. Nullam vel ipsum ut ligula elementum lobortis.
-Maecenas aliquam, massa laoreet lacinia pretium, nisi urna venenatis tortor, nec
-imperdiet tellus libero efficitur metus. Fusce semper posuere ligula, et
-facilisis metus bibendum interdum. Mauris at mauris sit amet sem pharetra
-commodo a eu leo. Nam at est non risus cursus maximus. Nam feugiat augue libero,
-id consectetur tortor bibendum non. Quisque nec fringilla lorem. Nullam
-efficitur vulputate mauris, nec maximus leo dignissim id.
+Education
+---------
 
-In hac habitasse platea dictumst. Duis sagittis dui ac ex suscipit maximus.
-Morbi pellentesque venenatis felis sed convallis. Nulla varius, nibh vitae
-placerat tempus, mauris sem elementum ipsum, eget sollicitudin nisl est vel
-purus. Fusce malesuada odio velit, non cursus leo fermentum id. Cras pharetra
-sodales fringilla. Etiam quis est a dolor egestas pellentesque. Maecenas non
-scelerisque purus, congue cursus arcu. Donec vel dapibus mi. Mauris maximus
-posuere placerat. Sed et libero eu nibh tristique mollis a eget lectus. Donec
-interdum augue sollicitudin vehicula hendrerit. Vivamus justo orci, molestie ac
-sollicitudin ac, lobortis at tellus. Etiam rhoncus ullamcorper risus eu tempor.
-Sed porttitor, neque ac efficitur gravida, arcu lacus pharetra dui, in consequat
-elit tellus auctor nulla. Donec placerat elementum diam, vitae imperdiet lectus
-luctus at.
+2010-2014 (expected)
+:   **PhD, Computer Science**; Awesome University (MyTown)
 
-Nullam eu feugiat mi. Quisque nec tristique nisl, dignissim dictum leo. Nam non
-quam nisi. Donec rutrum turpis ac diam blandit, id pulvinar mauris suscipit.
-Pellentesque tincidunt libero ultricies risus iaculis, sit amet consequat velit
-blandit. Fusce quis varius nulla. Nullam nisi nisi, suscipit ut magna quis,
-feugiat porta nibh. Sed id enim lectus. Suspendisse elementum justo sapien, sit
-amet consequat orci accumsan et. Aliquam ornare ullamcorper sem sed finibus.
-Nullam ac lacus pulvinar, egestas felis ut, accumsan est.
+    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
+     Estimation Problem*
 
-Pellentesque sagittis vehicula sem quis luctus. Proin sodales magna in lorem
-hendrerit aliquam. Integer eu varius orci. Vestibulum ante ipsum primis in
-faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ante ipsum
-primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut at mauris
-nibh. Suspendisse maximus ac eros at vestibulum.
+2007-2010
+:   **BSc, Computer Science and Electrical Engineering**; University of
+    HomeTown (HomeTown)
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque egestas
-tortor et dui consequat faucibus. Nunc vitae odio ornare, venenatis ligula a,
-vulputate nisl. Aenean congue varius ex, sit amet bibendum odio posuere at.
-Nulla facilisi. In finibus, nulla vitae tincidunt ornare, sapien nulla fermentum
-mauris, sed consectetur tortor arcu eget arcu. Vestibulum vel quam enim.
+    *Minor: Awesomeology*
+
+Experience
+----------
+
+**Your Most Recent Work Experience:**
+
+Short text containing the type of work done, results obtained,
+lessons learned and other remarks. Can also include lists and
+links:
+
+* First item
+
+* Item with [link](http://www.example.com). Links will work both in
+  the html and pdf versions.
+
+**That Other Job You Had**
+
+Also with a short description.
+
+Technical Experience
+--------------------
+
+My Cool Side Project
+:   For items which don't have a clear time ordering, a definition
+    list can be used to have named items.
+
+    * These items can also contain lists, but you need to mind the
+      indentation levels in the markdown source.
+    * Second item.
+
+Open Source
+:   List open source contributions here, perhaps placing emphasis on
+    the project names, for example the **Linux Kernel**, where you
+    implemented multithreading over a long weekend, or **node.js**
+    (with [link](http://nodejs.org)) which was actually totally
+    your idea...
+
+Programming Languages
+:   **first-lang:** Here, we have an itemization, where we only want
+    to add descriptions to the first few items, but still want to
+    mention some others together at the end. A format that works well
+    here is a description list where the first few items have their
+    first word emphasized, and the last item contains the final few
+    emphasized terms. Notice the reasonably nice page break in the pdf
+    version, which wouldn't happen if we generated the pdf via html.
+
+:   **second-lang:** Description of your experience with second-lang,
+    perhaps again including a [link] [ref], this time placing the url
+    reference elsewhere in the document to reduce clutter (see source
+    file). 
+
+:   **obscure-but-impressive-lang:** We both know this one's pushing
+    it.
+
+:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
+
+[ref]: https://github.com/githubuser/superlongprojectname
+
+Extra Section, Call it Whatever You Want
+----------------------------------------
+
+* Human Languages:
+
+     * English (native speaker)
+     * ???
+     * This is what a nested list looks like.
+
+* Random tidbit
+
+* Other sort of impressive-sounding thing you did

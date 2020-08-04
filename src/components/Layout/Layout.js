@@ -13,7 +13,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
+      <div className={styles.childContainer}>
       {children}
+      </div>
       <div className={styles.footerBottom}>
         <Feedback />
         <Footer />
