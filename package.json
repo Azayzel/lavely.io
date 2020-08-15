@@ -2,7 +2,7 @@
   "name": "lavely-io",
   "version": "0.1.0",
   "private": true,
-  "main": "server/server.js",
+  "main": "build/server.js",
   "proxy": "http://localhost:3001",
   "author": "Josh Lavely <josh@lavely.io>",
   "dependencies": {
@@ -64,10 +64,11 @@
     "dev": "concurrently -r -k \"yarn start:server\" \"yarn start:client\"",
     "start:server": "nodemon --watch ./server --exec yarn pre-dev:server",
     "pre-dev:server": "yarn build:server && yarn serve",
-    "serve": "node ./dist/server.js",
+    "serve": "node build/server.js",
+    "build": "yarn build:client && yarn build:server",
     "start:client": "react-scripts start",
     "build:client": "react-scripts build",
-    "build:server": "babel --copy-files ./server --out-dir ./dist",
+    "build:server": "babel --copy-files ./server --out-dir ./build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

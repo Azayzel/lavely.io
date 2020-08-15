@@ -27,7 +27,7 @@ const app = express();
 //
 // Register Node.js middleware
 // -----------------------------------------------------------------------------
-app.use(express.static(path.resolve(__dirname, 'public')));
+app.use('/static',express.static(path.join(__dirname, 'static')));
 app.use(cookieParser());
 app.use(customAuthMiddleware);
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -44,6 +44,7 @@ app.use(
     getToken: req => req.cookies.id_token,
   }),
 );
+
 // Error handler for express-jwt
 app.use((err, req, res, next) => {
   // eslint-disable-line no-unused-vars
@@ -148,6 +149,13 @@ app.use(
     pretty:true,
   })),
 );
+
+//
+// Home, send back html
+app.get('/', function(req, res) {
+  // router in the javascript app can render the necessary components
+  res.sendFile(path.join(__dirname,'/index.html'));
+})
 
 //
 // Launch the server
