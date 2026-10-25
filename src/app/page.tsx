@@ -20,7 +20,7 @@ function SiteHeader() {
         <nav className="nav" aria-label="Main navigation">
           <a href="#work">Work</a><a href="#open-source">Open source</a><a href="#writing">Writing</a><a href="#about">About</a>
         </nav>
-        <a className="header__contact" href="mailto:contact@lavely.io?subject=Let%27s%20build%20something">Let's talk <span aria-hidden="true">↗</span></a>
+        <a className="header__contact" href="mailto:contact@lavely.io?subject=Let%27s%20build%20something">Let&apos;s talk <span aria-hidden="true">↗</span></a>
       </div>
     </header>
   );
@@ -46,12 +46,12 @@ export default function Home() {
             <div className="hero__copy">
               <div className="eyebrow"><span className="eyebrow__dot"/> INDEPENDENT ENGINEERING & PRODUCT WORK</div>
               <h1 id="intro-title">I build things<br/>that <em>work.</em><span className="cursor">_</span></h1>
-              <p className="hero__lead">I'm Josh — a principal software engineer with 20+ years of experience designing systems, solving difficult problems, and turning ideas into products people can actually use.</p>
+              <p className="hero__lead">I&apos;m Josh — a principal software engineer with 20+ years of experience designing systems, solving difficult problems, and turning ideas into products people can actually use.</p>
               <p className="hero__sub">Enterprise architecture by day. Websites, apps and open-source experiments the rest of the time. This is where the work lives.</p>
               <div className="actions"><a className="btn btn--accent" href="#work">Explore selected work <span>↘</span></a><a className="btn btn--outline" href="#about">A little about me <span>↗</span></a></div>
             </div>
             <div className="hero__diagram" aria-hidden="true">
-              <span className="diagram__top">A FEW THINGS I'VE BUILT</span>
+              <span className="diagram__top">A FEW THINGS I&apos;VE BUILT</span>
               <div className="diagram__ring diagram__ring--outer"/><div className="diagram__ring diagram__ring--middle"/><div className="diagram__ring diagram__ring--inner"/>
               <div className="diagram__spoke diagram__spoke--a"/><div className="diagram__spoke diagram__spoke--b"/><div className="diagram__spoke diagram__spoke--c"/>
               <div className="diagram__node diagram__node--center"><b>JL</b><small>IDEA → LIVE</small></div>
@@ -104,7 +104,7 @@ export default function Home() {
                 </a>
               ))}
             </div>
-            <div className="repo-footer"><span>There's plenty more in the workshop.</span><a href="https://github.com/Azayzel" target="_blank" rel="noopener noreferrer">Browse all GitHub projects ↗</a></div>
+            <div className="repo-footer"><span>There&apos;s plenty more in the workshop.</span><a href="https://github.com/Azayzel" target="_blank" rel="noopener noreferrer">Browse all GitHub projects ↗</a></div>
           </div>
         </section>
 
@@ -127,9 +127,9 @@ export default function Home() {
           <div className="shell about__grid">
             <div><p className="kicker">04 — A BIT ABOUT ME</p><h2>Engineer first.<br/><em>Always curious.</em></h2></div>
             <div className="about__copy">
-              <p className="about__lead">I've spent more than two decades building software — from hands-on product development to the architecture behind complex enterprise systems.</p>
-              <p>Today I work as a Principal Software Engineer at a Fortune 200 company. Outside that role, I build independent products, help businesses create better experiences online and explore what's possible with AI-assisted engineering.</p>
-              <p>I care about maintainable systems, clear interfaces and technology that gets out of people's way. The best way I know to demonstrate what you can do is to build something useful and put it out into the world.</p>
+              <p className="about__lead">I&apos;ve spent more than two decades building software — from hands-on product development to the architecture behind complex enterprise systems.</p>
+              <p>Today I work as a Principal Software Engineer at a Fortune 200 company. Outside that role, I build independent products, help businesses create better experiences online and explore what&apos;s possible with AI-assisted engineering.</p>
+              <p>I care about maintainable systems, clear interfaces and technology that gets out of people&apos;s way. The best way I know to demonstrate what you can do is to build something useful and put it out into the world.</p>
               <div className="about__fact"><small>WHAT I DO</small><strong>Architecture · Full-stack engineering · Product development</strong></div>
               <div className="about__fact"><small>WHAT I VALUE</small><strong>Clarity · Craft · Practicality · Curiosity</strong></div>
             </div>
@@ -138,7 +138,7 @@ export default function Home() {
 
         <section id="contact" className="contact dark">
           <div className="shell contact__grid">
-            <div><p className="kicker">05 — SAY HELLO</p><h2>Have something<br/><em>worth building?</em></h2><p>Whether it's a website, a complex software problem or an interesting engineering conversation, I'd like to hear about it.</p><a className="btn btn--accent" href="mailto:contact@lavely.io?subject=Let%27s%20build%20something">contact@lavely.io ↗</a></div>
+            <div><p className="kicker">05 — SAY HELLO</p><h2>Have something<br/><em>worth building?</em></h2><p>Whether it&apos;s a website, a complex software problem or an interesting engineering conversation, I&apos;d like to hear about it.</p><a className="btn btn--accent" href="mailto:contact@lavely.io?subject=Let%27s%20build%20something">contact@lavely.io ↗</a></div>
             <span className="contact__monogram" aria-hidden="true">L.</span>
           </div>
         </section>

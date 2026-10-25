@@ -5,7 +5,7 @@ A modern, content-first engineering portfolio for Josh Lavely, replacing the his
 ## Stack
 
 - Next.js 16.4.3 App Router + React 19.3.1
-- TypeScript 5.9.3 (known-compatible toolchain; later major versions need validation)
+- TypeScript 6.0.2 and ESLint 10.13.0 (supported stable toolchain; TypeScript 7 adoption requires separate compatibility validation)
 - CSS (no UI kit, animation library, tracking SDK or component runtime)
 - App Router metadata, static case-study routes, sitemap, robots.txt and structured data
 

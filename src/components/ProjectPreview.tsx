@@ -16,7 +16,7 @@ export default function ProjectPreview({ project }: { project: Project }) {
               <small>BRING YOUR PEOPLE TOGETHER</small>
               <h3>Make more<br/><em>memories.</em></h3>
               <div className="mini-event"><b>15<br/>NOV</b><span>Family get-together<small>RSVP · Gifts · Chat</small></span><i>↗</i></div>
-              <div className="mini-event mini-event--faded"><b>24<br/>DEC</b><span>Holiday traditions<small>Everyone's invited</small></span><i>↗</i></div>
+              <div className="mini-event mini-event--faded"><b>24<br/>DEC</b><span>Holiday traditions<small>Everyone&apos;s invited</small></span><i>↗</i></div>
             </div>
           </div>
         )}
