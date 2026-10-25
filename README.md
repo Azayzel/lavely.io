@@ -39,4 +39,4 @@ The previous repository contains a separate legacy Express/GraphQL/Redux/blog-ad
 
 External websites are linked as portfolio projects. Their illustrated previews are **concept art, not screenshots** and no unverified metrics or outcomes are claimed.
 
-A lockfile and production build are still required before merge if network/package-registry access is unavailable to the implementation environment. Run npm install and commit package-lock.json, then run npm ci and npm run check.
+CI verified npm install, TypeScript, ESLint, and production build on 2026-10-25 (see GitHub Actions run 40242943006). A committed package-lock.json is still needed for reproducible builds: run npm install and commit the lockfile, then switch verification to npm ci.
