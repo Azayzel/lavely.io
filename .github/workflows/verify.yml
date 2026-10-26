@@ -1,18 +1,29 @@
 name: Verify Portfolio
 on:
   push:
-    branches: [feat/portfolio-refresh-2026]
+    branches: [feat/portfolio-refresh-2026, feat/portfolio-real-site-screenshots]
   pull_request:
+
+permissions:
+  contents: read
 
 jobs:
   verify:
     runs-on: ubuntu-latest
+    env:
+      MOTION_TOKEN: ${{ secrets.MOTION_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Install (lockfile to be committed before merge)
+      - name: Require Motion+ registry token
+        run: |
+          if [ -z "$MOTION_TOKEN" ]; then
+            echo "::error::Set the MOTION_TOKEN repository Actions secret before building this PR."
+            exit 1
+          fi
+      - name: Install dependencies
         run: |
           if [ -f package-lock.json ]; then npm ci; else npm install --no-audit --no-fund; fi
       - name: Typecheck
