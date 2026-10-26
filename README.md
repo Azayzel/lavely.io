@@ -6,7 +6,7 @@ A modern, content-first engineering portfolio for Josh Lavely, replacing the his
 
 - Next.js 16.4.3 App Router + React 19.3.1
 - TypeScript 6.0.2 and ESLint 10.13.0 (supported stable toolchain; TypeScript 7 adoption requires separate compatibility validation)
-- CSS (no UI kit, animation library, tracking SDK or component runtime)
+- CSS plus Motion and private Motion+ UI for restrained interaction and typing animations; no UI kit or tracking SDK.
 - App Router metadata, static case-study routes, sitemap, robots.txt and structured data
 
 ## Local development
@@ -40,3 +40,20 @@ The previous repository contains a separate legacy Express/GraphQL/Redux/blog-ad
 External websites are linked as portfolio projects. Their portfolio previews use **real mobile website screenshots provided by the site owner** and no unverified metrics or outcomes are claimed.
 
 CI verified npm install, TypeScript, ESLint, and production build on 2026-10-25 (see GitHub Actions run 40242943006). A committed package-lock.json is still needed for reproducible builds: run npm install and commit the lockfile, then switch verification to npm ci.
+
+## Motion UI / Motion+
+
+Motion for React drives lightweight card hover and hero motion; Motion+ powers a premium Typewriter in the hero eyebrow. Visitors who prefer reduced motion see static text and no animated transformations.
+
+The private registry uses a committed `.npmrc` with a **variable placeholder only**:
+
+```ini
+@motionplus:registry=https://api.motion.dev/npm/
+//api.motion.dev/npm/:_authToken=${MOTION_TOKEN}
+```
+
+Export `MOTION_TOKEN` in the environment before **all** npm commands, including `npm run dev` / `npm run build`. Never put a literal registry token in source, lockfiles, Git history, or screenshots.
+
+In GitHub, configure an Actions repository secret named `MOTION_TOKEN` (Settings → Secrets and variables → Actions). Add it separately as a sensitive build-time environment variable to the deployment provider (if the host builds from source). CI will explicitly fail with a setup message until the Actions secret exists. After the secret is configured, run `npm install`, commit the generated `package-lock.json`, and switch CI to `npm ci`.
+
+The standalone HTML screenshot preview is a visual companion, not the actual Motion+ runtime; test animations in a deployed Next.js preview after the token is configured.

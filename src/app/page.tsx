@@ -1,5 +1,8 @@
 import Link from "next/link";
 import ProjectPreview from "@/components/ProjectPreview";
+import AnimatedEyebrow from "@/components/AnimatedEyebrow";
+import FloatingDiagram from "@/components/FloatingDiagram";
+import MotionCard from "@/components/MotionCard";
 import { projects } from "@/data/projects";
 
 const repos = [
@@ -44,13 +47,13 @@ export default function Home() {
         <section className="hero dark" aria-labelledby="intro-title">
           <div className="shell hero__grid">
             <div className="hero__copy">
-              <div className="eyebrow"><span className="eyebrow__dot"/> INDEPENDENT ENGINEERING & PRODUCT WORK</div>
+              <AnimatedEyebrow />
               <h1 id="intro-title">I build things<br/>that <em>work.</em><span className="cursor">_</span></h1>
               <p className="hero__lead">I&apos;m Josh — a principal software engineer with 20+ years of experience designing systems, solving difficult problems, and turning ideas into products people can actually use.</p>
               <p className="hero__sub">Enterprise architecture by day. Websites, apps and open-source experiments the rest of the time. This is where the work lives.</p>
               <div className="actions"><a className="btn btn--accent" href="#work">Explore selected work <span>↘</span></a><a className="btn btn--outline" href="#about">A little about me <span>↗</span></a></div>
             </div>
-            <div className="hero__diagram" aria-hidden="true">
+            <FloatingDiagram className="hero__diagram">
               <span className="diagram__top">A FEW THINGS I&apos;VE BUILT</span>
               <div className="diagram__ring diagram__ring--outer"/><div className="diagram__ring diagram__ring--middle"/><div className="diagram__ring diagram__ring--inner"/>
               <div className="diagram__spoke diagram__spoke--a"/><div className="diagram__spoke diagram__spoke--b"/><div className="diagram__spoke diagram__spoke--c"/>
@@ -59,7 +62,7 @@ export default function Home() {
               <div className="diagram__node diagram__node--b"><b>⌘</b><small>SYSTEMS</small></div>
               <div className="diagram__node diagram__node--c"><b>{"</>"}</b><small>TOOLS</small></div>
               <span className="diagram__bottom">CONCEPT · DESIGN · ENGINEERING · SHIP</span>
-            </div>
+            </FloatingDiagram>
           </div>
           <div className="shell hero__end"><div/><span>01 / THE WORK IS THE INTRODUCTION</span><span>SCROLL TO EXPLORE ↓</span></div>
         </section>
@@ -72,7 +75,7 @@ export default function Home() {
             </div>
             <div className="work__list">
               {projects.map((project) => (
-                <article className="work-card" key={project.slug}>
+                <MotionCard className="work-card" key={project.slug}>
                   <ProjectPreview project={project}/>
                   <div className="work-card__details">
                     <p className="work-card__eyebrow">PROJECT {project.number} <span>{project.category}</span></p>
@@ -81,7 +84,7 @@ export default function Home() {
                     <div className="tags">{project.technologies.slice(0,4).map((tag) => <span key={tag}>{tag}</span>)}</div>
                     <div className="work-card__links"><Link href={"/work/" + project.slug}>Behind the build ↗</Link><a href={project.href} target="_blank" rel="noopener noreferrer">Visit website ↗</a></div>
                   </div>
-                </article>
+                </MotionCard>
               ))}
             </div>
             <p className="caption">Project screenshots were supplied by the site owner and optimized for web presentation.</p>
