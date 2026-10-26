@@ -9,3 +9,5 @@
 - **No performance claims.** Don't invent conversions, traffic numbers, customer outcomes or production feature status.
 - **Privacy-preserving contact.** Mailto link rather than an unconfigured form collecting visitor data.
 - **Legacy backend removed from the target tree.** Its history remains in master; verify active consumers before merge.
+
+- **Authentic imagery.** The three portfolio previews show original screenshots supplied by the site owner, optimized to WebP and displayed inside responsive mobile-device frames. No reconstructed brand artwork.

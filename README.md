@@ -37,6 +37,6 @@ The new branch is deliberately independent of the live lavely.io deployment. Ver
 
 The previous repository contains a separate legacy Express/GraphQL/Redux/blog-admin stack. Those components are not carried forward into the new portfolio because the scope is now an informational site; technical writing links to blog.lavely.io. Do not deploy if those endpoints are still used: audit traffic, integrations, URLs and redirects first.
 
-External websites are linked as portfolio projects. Their illustrated previews are **concept art, not screenshots** and no unverified metrics or outcomes are claimed.
+External websites are linked as portfolio projects. Their portfolio previews use **real mobile website screenshots provided by the site owner** and no unverified metrics or outcomes are claimed.
 
 CI verified npm install, TypeScript, ESLint, and production build on 2026-10-25 (see GitHub Actions run 40242943006). A committed package-lock.json is still needed for reproducible builds: run npm install and commit the lockfile, then switch verification to npm ci.

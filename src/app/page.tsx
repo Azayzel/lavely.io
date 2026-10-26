@@ -84,7 +84,7 @@ export default function Home() {
                 </article>
               ))}
             </div>
-            <p className="caption">Project visuals are original illustrative concepts, not screenshots of the live websites.</p>
+            <p className="caption">Project screenshots were supplied by the site owner and optimized for web presentation.</p>
           </div>
         </section>
 
